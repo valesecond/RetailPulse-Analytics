@@ -55,5 +55,3 @@ Agenda de melhorias (sugestões)
 - Normalizar nomes de colunas e tipos no carregamento para facilitar consultas SQL.
 - Adicionar testes unitários simples para as funções de `src/transform.py`.
 - Documentar as colunas e dicionário de dados em `docs/data_dictionary.md`.
-
-Se precisar que eu priorize qualquer item (ex.: criar testes, documentar dicionário de dados ou melhorar notebooks), diga qual e eu inicio.
