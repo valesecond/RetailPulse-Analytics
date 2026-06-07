@@ -1,0 +1,10 @@
+{
+  "KPI - Total Vendas": { "x_pct": 10, "y_pct": 5 },
+  "KPI - Nº Pedidos": { "x_pct": 40, "y_pct": 5 },
+  "KPI - Ticket Médio": { "x_pct": 70, "y_pct": 5 },
+  "Vendas Mensais": { "x_pct": 10, "y_pct": 28 },
+  "Vendas por Categoria": { "x_pct": 55, "y_pct": 28 },
+  "Vendas por Regiao": { "x_pct": 10, "y_pct": 60 },
+  "Top10 - Produtos": { "x_pct": 55, "y_pct": 60 },
+  "Top10 - Clientes": { "x_pct": 55, "y_pct": 78 }
+}

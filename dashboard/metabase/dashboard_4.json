@@ -1,0 +1,561 @@
+{
+  "description": null,
+  "archived": false,
+  "view_count": 9,
+  "collection_position": null,
+  "dashcards": [
+    {
+      "size_x": 12,
+      "dashboard_tab_id": null,
+      "series": [],
+      "inline_parameters": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 7,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": null,
+        "result_metadata": [
+          {
+            "database_type": "timestamp",
+            "semantic_type": null,
+            "lib/deduplicated-name": "mes",
+            "lib/original-name": "mes",
+            "name": "mes",
+            "lib/source": "source/native",
+            "lib/source-column-alias": "mes",
+            "source": "native",
+            "field_ref": [
+              "field",
+              "mes",
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            "effective_type": "type/DateTime",
+            "lib/desired-column-alias": "mes",
+            "display_name": "mes",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 48,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/DateTime": {
+                  "earliest": "2015-01-01T00:00:00Z",
+                  "latest": "2018-12-01T00:00:00Z",
+                  "skewness": -0.0010875335212296004,
+                  "weekday-distribution": [
+                    0.125,
+                    0.125,
+                    0.14583333333333334,
+                    0.16666666666666666,
+                    0.14583333333333334,
+                    0.125,
+                    0.16666666666666666
+                  ],
+                  "hour-distribution": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "mode-fraction": 0.020833333333333332,
+                  "top-3-fraction": 0.0625
+                }
+              }
+            },
+            "base_type": "type/DateTime"
+          },
+          {
+            "database_type": "float8",
+            "semantic_type": null,
+            "lib/deduplicated-name": "vendas_mensais",
+            "lib/original-name": "vendas_mensais",
+            "name": "vendas_mensais",
+            "lib/source": "source/native",
+            "lib/source-column-alias": "vendas_mensais",
+            "source": "native",
+            "field_ref": [
+              "field",
+              "vendas_mensais",
+              {
+                "base-type": "type/Float"
+              }
+            ],
+            "effective_type": "type/Float",
+            "lib/desired-column-alias": "vendas_mensais",
+            "display_name": "vendas_mensais",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 48,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "skewness": 0.668843966844223,
+                  "min": 4519.892,
+                  "q1": 28608.25899999999,
+                  "q3": 63133.606000000036,
+                  "excess-kurtosis": -0.024626581149906013,
+                  "zero-fraction": 0.0,
+                  "mode-fraction": 0.020833333333333332,
+                  "top-3-fraction": 0.0625,
+                  "max": 117938.15500000001,
+                  "sd": 24914.16446213103,
+                  "avg": 46929.32109791666
+                }
+              }
+            },
+            "base_type": "type/Float"
+          }
+        ],
+        "embedding_type": null,
+        "initially_published_at": null,
+        "can_write": true,
+        "card_schema": 23,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": null,
+        "query_type": "native",
+        "download_perms": "full",
+        "name": "Vendas Mensais",
+        "document_id": null,
+        "last_used_at": "2026-06-07T17:37:52.870361Z",
+        "type": "question",
+        "dimensions": null,
+        "query_average_duration": 61,
+        "creator_id": 1,
+        "moderation_reviews": [],
+        "updated_at": "2026-06-07T15:59:13.290686Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "lib/type": "mbql/query",
+          "database": 2,
+          "stages": [
+            {
+              "lib/type": "mbql.stage/native",
+              "native": "-- Vendas mensais (para importar como pergunta SQL no Metabase)\nSELECT\n    DATE_TRUNC('month', data_pedido) AS mes,\n    SUM(vendas) AS vendas_mensais\nFROM sales_pt_br\nGROUP BY mes\nORDER BY mes;\n"
+            }
+          ]
+        },
+        "dimension_mappings": null,
+        "id": 46,
+        "legacy_query": null,
+        "parameter_mappings": [],
+        "display": "table",
+        "archived_directly": false,
+        "entity_id": "Whp_jKQ0k9OpXA1ZMiD-H",
+        "collection_preview": true,
+        "visualization_settings": {},
+        "metabase_version": "v0.61.3.6 (75616cb)",
+        "parameters": [],
+        "dashboard_id": null,
+        "created_at": "2026-06-07T15:59:13.290686Z",
+        "public_uuid": null
+      },
+      "updated_at": "2026-06-07T16:28:36.472689Z",
+      "col": 0,
+      "id": 37,
+      "parameter_mappings": [],
+      "card_id": 46,
+      "entity_id": "iKZ7S6uBGF4lSKlgPoLYD",
+      "visualization_settings": {},
+      "size_y": 9,
+      "dashboard_id": 4,
+      "created_at": "2026-06-07T16:28:36.472689Z",
+      "row": 0
+    },
+    {
+      "size_x": 12,
+      "dashboard_tab_id": null,
+      "series": [],
+      "inline_parameters": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 7,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": null,
+        "result_metadata": [
+          {
+            "database_type": "text",
+            "semantic_type": null,
+            "lib/deduplicated-name": "categoria",
+            "lib/original-name": "categoria",
+            "name": "categoria",
+            "lib/source": "source/native",
+            "lib/source-column-alias": "categoria",
+            "source": "native",
+            "field_ref": [
+              "field",
+              "categoria",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "lib/desired-column-alias": "categoria",
+            "display_name": "categoria",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 3,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Text": {
+                  "max-length": 22.0,
+                  "min-length": 6.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 12.666666666666666,
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "mode-fraction": 0.3333333333333333,
+                  "top-3-fraction": 1.0,
+                  "percent-blank": 0.0
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "database_type": "float8",
+            "semantic_type": null,
+            "lib/deduplicated-name": "total_vendas",
+            "lib/original-name": "total_vendas",
+            "name": "total_vendas",
+            "lib/source": "source/native",
+            "lib/source-column-alias": "total_vendas",
+            "source": "native",
+            "field_ref": [
+              "field",
+              "total_vendas",
+              {
+                "base-type": "type/Float"
+              }
+            ],
+            "effective_type": "type/Float",
+            "lib/desired-column-alias": "total_vendas",
+            "display_name": "total_vendas",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 3,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "skewness": 1.5475963383145432,
+                  "min": 703212.8240000032,
+                  "q1": 703212.8240000032,
+                  "q3": 825856.1129999965,
+                  "excess-kurtosis": null,
+                  "zero-fraction": 0.0,
+                  "mode-fraction": 0.3333333333333333,
+                  "top-3-fraction": 1.0,
+                  "max": 825856.1129999965,
+                  "sd": 65731.02686506978,
+                  "avg": 750869.1375666665
+                }
+              }
+            },
+            "base_type": "type/Float"
+          }
+        ],
+        "embedding_type": null,
+        "initially_published_at": null,
+        "can_write": true,
+        "card_schema": 23,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": null,
+        "query_type": "native",
+        "download_perms": "full",
+        "name": "Vendas por Categoria",
+        "document_id": null,
+        "last_used_at": "2026-06-07T17:37:52.870361Z",
+        "type": "question",
+        "dimensions": null,
+        "query_average_duration": 32,
+        "creator_id": 1,
+        "moderation_reviews": [],
+        "updated_at": "2026-06-07T15:59:13.358469Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "lib/type": "mbql/query",
+          "database": 2,
+          "stages": [
+            {
+              "lib/type": "mbql.stage/native",
+              "native": "-- Vendas por categoria (para importar como pergunta SQL no Metabase)\nSELECT\n    categoria,\n    SUM(vendas) AS total_vendas\nFROM sales_pt_br\nGROUP BY categoria\nORDER BY total_vendas DESC;\n"
+            }
+          ]
+        },
+        "dimension_mappings": null,
+        "id": 47,
+        "legacy_query": null,
+        "parameter_mappings": [],
+        "display": "table",
+        "archived_directly": false,
+        "entity_id": "-7JH1FIeWCYBf1i9gHSv7",
+        "collection_preview": true,
+        "visualization_settings": {},
+        "metabase_version": "v0.61.3.6 (75616cb)",
+        "parameters": [],
+        "dashboard_id": null,
+        "created_at": "2026-06-07T15:59:13.358469Z",
+        "public_uuid": null
+      },
+      "updated_at": "2026-06-07T16:28:36.472689Z",
+      "col": 12,
+      "id": 38,
+      "parameter_mappings": [],
+      "card_id": 47,
+      "entity_id": "BY-SK8nbVNPzope72eqN2",
+      "visualization_settings": {},
+      "size_y": 9,
+      "dashboard_id": 4,
+      "created_at": "2026-06-07T16:28:36.472689Z",
+      "row": 0
+    },
+    {
+      "size_x": 12,
+      "dashboard_tab_id": null,
+      "series": [],
+      "inline_parameters": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 8,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": null,
+        "result_metadata": [
+          {
+            "database_type": "text",
+            "semantic_type": null,
+            "lib/deduplicated-name": "regiao",
+            "lib/original-name": "regiao",
+            "name": "regiao",
+            "lib/source": "source/native",
+            "lib/source-column-alias": "regiao",
+            "source": "native",
+            "field_ref": [
+              "field",
+              "regiao",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "lib/desired-column-alias": "regiao",
+            "display_name": "regiao",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 4,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Text": {
+                  "max-length": 6.0,
+                  "min-length": 3.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 4.75,
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "mode-fraction": 0.25,
+                  "top-3-fraction": 0.75,
+                  "percent-blank": 0.0
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "database_type": "float8",
+            "semantic_type": null,
+            "lib/deduplicated-name": "total_vendas",
+            "lib/original-name": "total_vendas",
+            "name": "total_vendas",
+            "lib/source": "source/native",
+            "lib/source-column-alias": "total_vendas",
+            "source": "native",
+            "field_ref": [
+              "field",
+              "total_vendas",
+              {
+                "base-type": "type/Float"
+              }
+            ],
+            "effective_type": "type/Float",
+            "lib/desired-column-alias": "total_vendas",
+            "display_name": "total_vendas",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 4,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "skewness": -0.3064344150145201,
+                  "min": 389151.4590000004,
+                  "q1": 389151.4590000004,
+                  "q3": 660589.3559999983,
+                  "excess-kurtosis": -3.2890563250218996,
+                  "zero-fraction": 0.0,
+                  "mode-fraction": 0.25,
+                  "top-3-fraction": 0.75,
+                  "max": 710219.6845000003,
+                  "sd": 148739.2547394532,
+                  "avg": 563151.8531749999
+                }
+              }
+            },
+            "base_type": "type/Float"
+          }
+        ],
+        "embedding_type": null,
+        "initially_published_at": null,
+        "can_write": true,
+        "card_schema": 23,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": null,
+        "query_type": "native",
+        "download_perms": "full",
+        "name": "Vendas por Regiao",
+        "document_id": null,
+        "last_used_at": "2026-06-07T17:37:52.870361Z",
+        "type": "question",
+        "dimensions": null,
+        "query_average_duration": 65,
+        "creator_id": 1,
+        "moderation_reviews": [],
+        "updated_at": "2026-06-07T15:59:13.422408Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "lib/type": "mbql/query",
+          "database": 2,
+          "stages": [
+            {
+              "lib/type": "mbql.stage/native",
+              "native": "-- Vendas por regiao (para importar como pergunta SQL no Metabase)\nSELECT\n    regiao,\n    SUM(vendas) AS total_vendas\nFROM sales_pt_br\nGROUP BY regiao\nORDER BY total_vendas DESC;\n"
+            }
+          ]
+        },
+        "dimension_mappings": null,
+        "id": 48,
+        "legacy_query": null,
+        "parameter_mappings": [],
+        "display": "table",
+        "archived_directly": false,
+        "entity_id": "ptgHuwrrcjjzY6DqiHAJu",
+        "collection_preview": true,
+        "visualization_settings": {},
+        "metabase_version": "v0.61.3.6 (75616cb)",
+        "parameters": [],
+        "dashboard_id": null,
+        "created_at": "2026-06-07T15:59:13.422408Z",
+        "public_uuid": null
+      },
+      "updated_at": "2026-06-07T16:28:36.472689Z",
+      "col": 0,
+      "id": 39,
+      "parameter_mappings": [],
+      "card_id": 48,
+      "entity_id": "LMQ-LBbOm3VFaJehJObyS",
+      "visualization_settings": {},
+      "size_y": 9,
+      "dashboard_id": 4,
+      "created_at": "2026-06-07T16:28:36.472689Z",
+      "row": 9
+    }
+  ],
+  "embedding_type": null,
+  "initially_published_at": null,
+  "can_write": true,
+  "can_set_cache_policy": true,
+  "tabs": [],
+  "enable_embedding": false,
+  "collection_id": null,
+  "show_in_getting_started": false,
+  "name": "RetailPulse PT-BR",
+  "is_remote_synced": false,
+  "width": "fixed",
+  "caveats": null,
+  "collection_authority_level": null,
+  "creator_id": 1,
+  "can_restore": false,
+  "moderation_reviews": [],
+  "updated_at": "2026-06-07T15:59:13.472775Z",
+  "made_public_by_id": null,
+  "embedding_params": null,
+  "cache_ttl": null,
+  "last_used_param_values": {},
+  "id": 4,
+  "last_viewed_at": "2026-06-07T17:37:52.803987Z",
+  "position": null,
+  "archived_directly": false,
+  "entity_id": "Iz4At_ZD2MYsOBRwQBazJ",
+  "param_fields": {},
+  "last-edit-info": {
+    "id": 1,
+    "email": "ffvsegundo@gmail.com",
+    "first_name": "Francisco",
+    "last_name": "Fernandes",
+    "timestamp": "2026-06-07T16:28:36.545372Z"
+  },
+  "collection": {
+    "metabase.collections.models.collection.root/is-root?": true,
+    "authority_level": null,
+    "name": "Nossas análises",
+    "is_personal": false,
+    "id": "root",
+    "is_remote_synced": false,
+    "can_write": true
+  },
+  "parameters": [],
+  "auto_apply_filters": true,
+  "created_at": "2026-06-07T15:59:13.472775Z",
+  "public_uuid": null,
+  "points_of_interest": null,
+  "can_delete": false
+}

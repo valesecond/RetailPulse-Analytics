@@ -30,3 +30,36 @@ CREATE TABLE sales (
 
     sales NUMERIC
 );
+
+CREATE TABLE sales_pt_br (
+
+    id_linha INTEGER,
+    id_pedido VARCHAR(50),
+
+    data_pedido DATE,
+    data_envio DATE,
+
+    modo_envio VARCHAR(50),
+
+    id_cliente VARCHAR(50),
+    nome_cliente VARCHAR(255),
+
+    segmento VARCHAR(50),
+
+    pais VARCHAR(100),
+    cidade VARCHAR(100),
+    estado VARCHAR(100),
+
+    codigo_postal VARCHAR(20),
+
+    regiao VARCHAR(50),
+
+    id_produto VARCHAR(50),
+
+    categoria VARCHAR(100),
+    subcategoria VARCHAR(100),
+
+    nome_produto TEXT,
+
+    vendas NUMERIC
+);

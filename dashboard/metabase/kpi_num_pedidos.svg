@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="120" viewBox="0 0 240 120">
+  <rect rx="8" ry="8" width="100%" height="100%" fill="#fff7ed" stroke="#fbd38d"/>
+  <text x="16" y="36" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#92400e">Nº Pedidos</text>
+  <text x="16" y="80" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#b45309">12.345</text>
+  <circle cx="190" cy="60" r="24" fill="#f59e0b"/>
+  <text x="186" y="66" font-family="Arial" font-size="14" fill="#fff">#</text>
+</svg>
